@@ -1,0 +1,19 @@
+
+<ul>
+{{#each this}}
+<li>
+    <div class="country-tittle">
+    <img width="30" height="30" src="{{flags.svg}}" alt="{{name.common}}">
+
+    <h1>{{name.official}}</h1>
+        </div>
+        <ul>
+            <li class="point"><h2>Capital:</h2><p>{{capital}}</p></li>
+            <li class="point"><h2>Population:</h2><p>{{population }}</p></li>
+            <li class="point"><h2>Languages:</h2><p>{{#each languages }}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p></li>
+   
+</ul>
+</li>
+{{/each}}
+</ul>
+
